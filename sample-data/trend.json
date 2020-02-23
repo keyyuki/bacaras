@@ -1,0 +1,351 @@
+{
+    "kind": "trends",
+    "content": {
+        "table": 343,
+        "value": [
+            {
+                "roundid": 91014573,
+                "shoe": 4,
+                "round": 1,
+                "result": "010001000000",
+                "cards": "CKS6#D7D9D5"
+            },
+            {
+                "roundid": 91014607,
+                "shoe": 4,
+                "round": 2,
+                "result": "001101000000",
+                "cards": "SQD9H3#H2SJCJ"
+            },
+            {
+                "roundid": 91014639,
+                "shoe": 4,
+                "round": 3,
+                "result": "100001000000",
+                "cards": "C7C8H5#S5HTC2"
+            },
+            {
+                "roundid": 91014678,
+                "shoe": 4,
+                "round": 4,
+                "result": "100000100100",
+                "cards": "S2H6#S6C3"
+            },
+            {
+                "roundid": 91014712,
+                "shoe": 4,
+                "round": 5,
+                "result": "010000101000",
+                "cards": "D2C6#SKD7"
+            },
+            {
+                "roundid": 91014743,
+                "shoe": 4,
+                "round": 6,
+                "result": "100011000000",
+                "cards": "H5HQCQ#C3D6D8"
+            },
+            {
+                "roundid": 91014785,
+                "shoe": 4,
+                "round": 7,
+                "result": "100010110000",
+                "cards": "HKDK#H2D6"
+            },
+            {
+                "roundid": 91014812,
+                "shoe": 4,
+                "round": 8,
+                "result": "010001000000",
+                "cards": "S4D9C2#CTDQDA"
+            },
+            {
+                "roundid": 91014880,
+                "shoe": 4,
+                "round": 9,
+                "result": "100001000001",
+                "cards": "H2CQDA#D5S8D3"
+            },
+            {
+                "roundid": 91014926,
+                "shoe": 4,
+                "round": 10,
+                "result": "100001000001",
+                "cards": "SAD4C8#C4H2"
+            },
+            {
+                "roundid": 91014962,
+                "shoe": 4,
+                "round": 11,
+                "result": "010100101000",
+                "cards": "D7SA#HTST"
+            },
+            {
+                "roundid": 91014995,
+                "shoe": 4,
+                "round": 12,
+                "result": "100001000000",
+                "cards": "C6DQ#S6S3H9"
+            },
+            {
+                "roundid": 91015035,
+                "shoe": 4,
+                "round": 13,
+                "result": "010000101000",
+                "cards": "D8SK#C7S6"
+            },
+            {
+                "roundid": 91015066,
+                "shoe": 4,
+                "round": 14,
+                "result": "010000100010",
+                "cards": "D8HA#DQD6"
+            },
+            {
+                "roundid": 91015104,
+                "shoe": 4,
+                "round": 15,
+                "result": "010000101000",
+                "cards": "D3D5#D9H2"
+            },
+            {
+                "roundid": 91015142,
+                "shoe": 4,
+                "round": 16,
+                "result": "010000101000",
+                "cards": "H3D5#CKH7"
+            },
+            {
+                "roundid": 91015182,
+                "shoe": 4,
+                "round": 17,
+                "result": "010001000000",
+                "cards": "STC4D9#C8C5D8"
+            },
+            {
+                "roundid": 91015231,
+                "shoe": 4,
+                "round": 18,
+                "result": "100000100100",
+                "cards": "S7H4#CTH9"
+            },
+            {
+                "roundid": 91015267,
+                "shoe": 4,
+                "round": 19,
+                "result": "001010100000",
+                "cards": "C9D9#S8CT"
+            },
+            {
+                "roundid": 91015302,
+                "shoe": 4,
+                "round": 20,
+                "result": "100001000001",
+                "cards": "DTD2H8#STS6"
+            },
+            {
+                "roundid": 91015348,
+                "shoe": 4,
+                "round": 21,
+                "result": "100000100100",
+                "cards": "S8DJ#C8DA"
+            },
+            {
+                "roundid": 91015384,
+                "shoe": 4,
+                "round": 22,
+                "result": "100001000000",
+                "cards": "CKDKDA#S7SK"
+            },
+            {
+                "roundid": 91015424,
+                "shoe": 4,
+                "round": 23,
+                "result": "010001000000",
+                "cards": "H4S3#CTSJC3"
+            },
+            {
+                "roundid": 91015460,
+                "shoe": 4,
+                "round": 24,
+                "result": "010000101000",
+                "cards": "CJH8#D9H7"
+            },
+            {
+                "roundid": 91015494,
+                "shoe": 4,
+                "round": 25,
+                "result": "100001000000",
+                "cards": "HQHTHJ#DQC2CK"
+            },
+            {
+                "roundid": 91015533,
+                "shoe": 4,
+                "round": 26,
+                "result": "100000100100",
+                "cards": "S5S7#HKH9"
+            },
+            {
+                "roundid": 91015562,
+                "shoe": 4,
+                "round": 27,
+                "result": "010000100000",
+                "cards": "HAH6#SJH6"
+            },
+            {
+                "roundid": 91015605,
+                "shoe": 4,
+                "round": 28,
+                "result": "010001000000",
+                "cards": "CAD7H8#SKCJD3"
+            },
+            {
+                "roundid": 91015637,
+                "shoe": 4,
+                "round": 29,
+                "result": "010000100010",
+                "cards": "SKS9#H4DK"
+            },
+            {
+                "roundid": 91015665,
+                "shoe": 4,
+                "round": 30,
+                "result": "001001000000",
+                "cards": "S8D3H2#C4H9"
+            },
+            {
+                "roundid": 91015699,
+                "shoe": 4,
+                "round": 31,
+                "result": "010100001000",
+                "cards": "HTC8#S7H7"
+            },
+            {
+                "roundid": 91015728,
+                "shoe": 4,
+                "round": 32,
+                "result": "010000000000",
+                "cards": "H3D4#C7D2HA"
+            },
+            {
+                "roundid": 91015756,
+                "shoe": 4,
+                "round": 33,
+                "result": "001000000000",
+                "cards": "D3H4#CQH7"
+            },
+            {
+                "roundid": 91015809,
+                "shoe": 4,
+                "round": 34,
+                "result": "100100000001",
+                "cards": "DTS8S2#S3S3"
+            },
+            {
+                "roundid": 91015841,
+                "shoe": 4,
+                "round": 35,
+                "result": "010000000000",
+                "cards": "D6SA#SQS4D7"
+            },
+            {
+                "roundid": 91015877,
+                "shoe": 4,
+                "round": 36,
+                "result": "100000000000",
+                "cards": "S9C2DT#S7CQHJ"
+            },
+            {
+                "roundid": 91015910,
+                "shoe": 4,
+                "round": 37,
+                "result": "010000000000",
+                "cards": "DJC5H8#DJD4H8"
+            },
+            {
+                "roundid": 91015944,
+                "shoe": 4,
+                "round": 38,
+                "result": "100000000100",
+                "cards": "DAH6#D5D4"
+            },
+            {
+                "roundid": 91015978,
+                "shoe": 4,
+                "round": 39,
+                "result": "010000000010",
+                "cards": "S9CJ#H9H7"
+            },
+            {
+                "roundid": 91016009,
+                "shoe": 4,
+                "round": 40,
+                "result": "100000010000",
+                "cards": "C6D8#S7HA"
+            },
+            {
+                "roundid": 91016040,
+                "shoe": 4,
+                "round": 41,
+                "result": "100000000001",
+                "cards": "SAS4H7#C3CQD3"
+            },
+            {
+                "roundid": 91016081,
+                "shoe": 4,
+                "round": 42,
+                "result": "010010001000",
+                "cards": "C9H9#S2SJ"
+            },
+            {
+                "roundid": 91016105,
+                "shoe": 4,
+                "round": 43,
+                "result": "001010000000",
+                "cards": "S5CACA#H6HKHA"
+            },
+            {
+                "roundid": 91016148,
+                "shoe": 4,
+                "round": 44,
+                "result": "010000000000",
+                "cards": "C8S8D3#H4D2CT"
+            },
+            {
+                "roundid": 91016186,
+                "shoe": 4,
+                "round": 45,
+                "result": "100000000000",
+                "cards": "C2CKHJ#SQC6S7"
+            },
+            {
+                "roundid": 91016226,
+                "shoe": 4,
+                "round": 46,
+                "result": "010010001000",
+                "cards": "H4S4#C4D2"
+            },
+            {
+                "roundid": 91016262,
+                "shoe": 4,
+                "round": 47,
+                "result": "010000000000",
+                "cards": "S2C7C8#HJS5"
+            },
+            {
+                "roundid": 91016295,
+                "shoe": 4,
+                "round": 48,
+                "result": "100000010000",
+                "cards": "S4C9#HTS8"
+            },
+            {
+                "roundid": 91016329,
+                "shoe": 4,
+                "round": 49,
+                "result": "100000010000",
+                "cards": "S3HK#D8HK"
+            }
+        ]
+    }
+}
