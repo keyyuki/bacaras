@@ -1,60 +1,3 @@
-
-
-
-/*
-var tableId = null
-var trends = [];
-var poolMap = {
-    
-}
-var BetType = {};
-BetType.BANKER = 1; 
-BetType.PLAYER = 2; 
-BetType.TIE = 3; 
-BetType.BANKER_PAIR = 4; 
-BetType.PLAYER_PAIR = 5; 
-BetType.BIG = 6; 
-BetType.SMALL = 7; 
-BetType.BANKER_N8 = 8; 
-BetType.PLAYER_N8 = 9; 
-BetType.BANKER_N9 = 10; 
-BetType.PLAYER_N9 = 11; 
-BetType.SUPER = 12;
-var catMap = {
-    '1': 'BANKER',
-    '2' : 'PLAYER',
-    '3': 'TIE',
-    '4': 'BANKER_PAIR',
-    '5' : 'PLAYER_PAIR',
-    '6' : 'BIG',
-    '7' : 'SMALL',
-    '8' : 'BANKER_N8',
-    '9' : 'PLAYER_N8',
-    '10' : 'BANKER_N9',
-    '11' : 'PLAYER_N9',
-    '12' : 'SUPER',
-}
-
-function handleEvent(evt) {
-    var msg = JSON.parse(evt.data);
-    switch (msg.kind) {
-        case 'trends': // first come room, kết quả các round trước
-            // init var trend here
-            break;
-        case 'commitsucceed': // result khi kết thúc ván, cộng dồn vào trends
-            // push commit to trend
-            break;
-        case 'pool': // số liệu đặt cửa
-            
-            break;
-        default:
-            break;
-    }
-}
-*/
-
-
-
 function HahaInjection() {
     this.tableId = null;
     this.pools = []; // số liệu  từng round ở đây, bao gôm id, round, người thắng, cards, tiền đặt cược
@@ -96,6 +39,7 @@ function HahaInjection() {
             var cards = trendPool.cards.split("#")
 
             return Object.assign({}, trendPool, {
+                table: this.tableId,
                 winners: winners,
                 playerCards: cards[0],
                 bankerCards: cards[1]
@@ -171,6 +115,43 @@ function HahaInjection() {
             default:
                 break;
         }
+    },
+    
+    this.toCsv = () => {
+        var data = window.localStorage.getItem('@table_' + this.tableId);
+        if(data){
+            data = JSON.parse(data);
+        } else {
+            data = [];
+        }
+        
+        var csvData = [];
+        csvData.push("table;round;roundId;winner;player cards;banker cards;BANKER;PLAYER;TIE;BANKER_PAIR;PLAYER_PAIR;BIG;SMALL;BANKER_N8;PLAYER_N8;BANKER_N9;PLAYER_N9;SUPER");
+        data.forEach((item) => {
+            var r = [];
+            r.push(item.table)
+            r.push(item.round)
+            r.push(item.roundid)
+            r.push(item.winners.join(", "))
+            r.push(item.playerCards)
+            r.push(item.bankerCards)
+            
+            var cats = Object.keys(this.catMap).map(key => this.catMap[key]);
+            for (let index = 0; index < cats.length; index++) {
+                const catName = cats[index];
+                if(typeof item.volume !== 'undefined' && typeof item.volume[catName] !== 'undefined'){
+                    r.push(item.volume[catName])
+                } else {
+                    r.push("")
+                }
+            }
+            
+            csvData.push(r.join(";"));
+        })
+        var displayBox = document.createElement('div')
+        displayBox.style = "padding: 30px;"
+        displayBox.innerHTML = csvData.join("<br/>");
+        document.getElementsByTagName('body')[0].appendChild(displayBox)
     }
 }
 var myHahaInjection = new HahaInjection();
