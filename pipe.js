@@ -1,0 +1,2 @@
+const asyncPipe = (...functions) => input => functions.reduceRight((chain, func) => chain.then(func), Promise.resolve(input));
+const pipe =  (...fns) => (input) => fns.reduce((v, func) => func(v), input);
