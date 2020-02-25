@@ -16,7 +16,7 @@ function HahaInjection() {
         '11': 'PLAYER_N9',
         '12': 'SUPER',
     }
-
+    var that = this
     /**
     * {
            "roundid": 91014573,
@@ -31,7 +31,7 @@ function HahaInjection() {
          (trendPool) => {
             var winners = trendPool.result.split("").reduce((acc, cur, index) => {
                 if (cur == '1') {
-                    var n = catMap[(index + 1).toString()]
+                    var n = this.catMap[(index + 1).toString()]
                     acc.push(n)
                 }
                 return acc;
@@ -46,9 +46,20 @@ function HahaInjection() {
             });
         }
     
-    this.handleTrendMessage = (mgs) => {
+    this.handleTrendMessage = (msg) => {
         this.tableId = msg.content.table
-        this.pools = msg.content.values.map(item => this.analizeTrendPool(item));       
+        this.pools = msg.content.value.map(item => this.analizeTrendPool(item));     
+        // get last pool as currentPoll
+        var currentPool = this.pools[this.pools.length -1]  ;
+        this.currentPool = {
+            table:  this.tableId,
+            round: currentPool.round,
+            roundid: currentPool.roundid,
+            shoe:currentPool.shoe,
+            cat: [],
+            amount: [],
+            volume: {}
+        }
         window.localStorage.setItem('@table_' + this.tableId, JSON.stringify(this.pools)) 
     }
     
@@ -68,7 +79,7 @@ function HahaInjection() {
         var result = {};
         for (let index = 0; index < cats.length; index++) {
             const catId = cats[index];
-            const catKey = this.catMap[catId];
+            const catKey = that.catMap[catId];
             result[catKey] = amounts[index]
         }
         return result;
@@ -100,17 +111,25 @@ function HahaInjection() {
         var msg = JSON.parse(evt.data);
         switch (msg.kind) {            
             case 'trends': // first come room, kết quả các round trước
+            console.log('trends', msg)
                 this.handleTrendMessage(msg);
                 break;
             case 'startbetsucceed':
+                
+                console.log('startbetsucceed', msg)
                 this.handleStartBet(msg);
                 break;
             case 'pool': // số liệu đặt cửa
                 this.handlePoolMessage(msg)
                 break;
             case 'commitsucceed': // result khi kết thúc ván, cộng dồn vào trends
-                // push commit to trend
-                this.handleCommitSucceed(msg)
+            
+            if(msg.content.table == this.tableId) {
+                console.log('commitsucceed', msg)
+                 // push commit to trend
+                 this.handleCommitSucceed(msg)
+            }
+               
                 break;
             default:
                 break;
@@ -156,3 +175,4 @@ function HahaInjection() {
 }
 var myHahaInjection = new HahaInjection();
 netutils.webSocket.onmessage = function (evt) { netutils.onMessage(evt); myHahaInjection.handleMessage(evt) }
+
