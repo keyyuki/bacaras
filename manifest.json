@@ -1,0 +1,24 @@
+{
+    "name": "Getting Started Example",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "manifest_version": 2,
+    "page_action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://casino.gp2play.com/*"
+            ],
+            "js": [
+                "contentScript.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "storage"
+    ]
+}
